@@ -3,6 +3,12 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
+*::grammar-error
+{
+    color: red;
+}
+
 html{
     scrollbar-color: #4c3425 #120F0D;
     scrollbar-width: thin;
@@ -20,9 +26,12 @@ summary {
     list-style: none; 
     display:flex;
     align-items: center;
-
     margin: 0;
     padding: 0;
+}
+
+summary::-webkit-details-marker {
+    display: none;
 }
 
 .main-content
@@ -79,9 +88,9 @@ summary {
     background-color: #2a211c;
     color:#cfc8bb;
     border-radius: 10px;
-    width: 30vw;
-    min-width: 130px;
     max-width: 300px;
+    min-width: 250px;
+
     top: 0;
     overflow-y: auto;
     padding: 3px;
@@ -93,20 +102,16 @@ summary {
 
 .arrow
 {
-    width: 55px;
-    padding: 10px
+    width: 55px; 
+    padding: 10px; 
 }
+
 
 .main-topic
 {
     font-size: 1.4rem;
     cursor: pointer;
     animation: alternate;
-}
-
-.main-topic::active
-{
-    transform: rotate(45deg);
 }
 
 .sub-topic
@@ -245,8 +250,76 @@ summary {
     min-height: 2vh;
     padding: 10px;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     color: rgb(95, 87, 71);
     background-color: #191513;
+}
+
+@media (max-width: 1000px) { 
+  .sidebar-inside { 
+    flex-direction: column; 
+    width: 100%; 
+  } 
+  
+  .sidebar { 
+    width: 90vw; 
+    max-width: 100%; 
+    height: auto; 
+    max-height: 200px; 
+    position: relative; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 5px;
+  } 
+  
+  .inside-content { 
+    margin-left: 5px; 
+    margin-right: 5px; 
+    padding: 20px; 
+  } 
+  
+  .outer-p, .inner-p { 
+    max-width: 100%; 
+    font-size: 1.1rem; 
+    line-height: 1.5; 
+  } 
+  
+
+  .title { 
+    font-size: clamp(1.5rem, 6vw, 2rem); 
+  } 
+  
+  .topbar { 
+    font-size: 1rem; 
+    gap: clamp(10px, 4vw, 20px); 
+  } 
+  
+  .sub-topic { 
+    padding-left: 15px; 
+  } 
+  
+  .inside-content > h1 { 
+    font-size: clamp(1.4rem, 7vw, 2.2rem); 
+    padding-top: 20px; 
+  } 
+  
+  .inside-content > h2 { 
+    font-size: clamp(1.2rem, 5vw, 1.6rem); 
+  } 
+  
+  .inside-content > h3 { 
+    font-size: clamp(1rem, 4vw, 1.2rem); 
+  } 
+  
+  .inside-content > hr { 
+    max-width: 100%; 
+    margin: 30px 0; 
+  } 
+  
+  .sidebar-inside > * { 
+    word-wrap: normal; 
+    overflow-wrap: normal; 
+  } 
 }
 
