@@ -1,0 +1,252 @@
+*{
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scrollbar-color: #4c3425 #120F0D;
+    scrollbar-width: thin;
+}
+
+body
+{
+    background-color: #120F0D;
+      font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+summary {
+    list-style: none; 
+    display:flex;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.main-content
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-inside
+{
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar-inside > *
+{
+    word-wrap: break-word;
+}
+
+.title
+{
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: #120F0D ;
+    color: rgb(236, 229, 219);
+}
+
+.topbar
+{
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: #4a3f39  ;
+    color: rgb(220, 216, 208);
+    border-bottom: 2px solid rgba(55, 37, 10, 0.2);
+    border-top: 2px solid rgba(55, 37, 10, 0.2);
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.topbar > *
+{
+    cursor: pointer;
+}
+
+.sidebar
+{
+    font-weight: 400;
+    margin-top: 15px;
+    margin-left: 5px;
+    background-color: #2a211c;
+    color:#cfc8bb;
+    border-radius: 10px;
+    width: 30vw;
+    min-width: 130px;
+    max-width: 300px;
+    top: 0;
+    overflow-y: auto;
+    padding: 3px;
+    align-self: flex-start;
+    height: 60vh;
+    position: sticky;
+    border: 4px solid rgb(27, 23, 15);
+}
+
+.arrow
+{
+    width: 55px;
+    padding: 10px
+}
+
+.main-topic
+{
+    font-size: 1.4rem;
+    cursor: pointer;
+    animation: alternate;
+}
+
+.main-topic::active
+{
+    transform: rotate(45deg);
+}
+
+.sub-topic
+{
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 5px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    color:#b0a188;
+    padding-left: 70px;
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+
+.inside-content
+{
+    background-color: #18120E;
+    color: #F4ECD8 ;
+    margin-top: 2vh;
+    margin-left: 3vw;
+    margin-right: 20vw;
+    margin-bottom: 3vh;
+    border-radius: 30px;
+    flex-grow: 1;
+    padding: 7px;
+    padding-left: 6vw;
+}
+
+.article-button
+{
+    width: 130px;
+    height: 40px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-radius: 7px;
+    border-color: #c3aea2;
+    border-width: 3px;
+    border-style: solid;
+    background-color: #c6b8ae;
+    color: #191513;
+    cursor: pointer;
+}
+
+.inside-header
+{
+    display: flex;
+    gap: 5px;
+}
+
+.inside-button
+{
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 7px;
+    border-color: #907c70;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #c1bbb6;
+    color: #191513;
+    cursor: pointer;
+}
+
+.inside-content > h1
+{
+    color: #f4e6c4;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+#top-explanation
+{
+    padding-bottom: 100px;
+}
+.inside-content > h2
+{
+    color: #e5d7b7;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.inside-content > h3
+{
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 15x;
+}
+
+.outer-p
+{
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-top: 5px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    max-width: 40vw;
+    color: #e3dac6;
+}
+
+.inner-p
+{
+    font-size: 1.4rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    line-height: 1.3;
+    word-wrap: break-word;
+    max-width: 35vw;
+    color: #e3dac6;
+}
+
+.inside-content > hr
+{
+    margin: 75px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #937a6c;
+    max-width:45vw;
+    border: 0;
+    height: 0.5px;
+    border-radius: 10px;
+}
+
+.bottom-content
+{
+    display: flex;
+    min-height: 2vh;
+    padding: 10px;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: rgb(95, 87, 71);
+    background-color: #191513;
+}
+
