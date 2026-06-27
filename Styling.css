@@ -61,7 +61,6 @@ summary::-webkit-details-marker {
     font-size: 1.5rem;
     padding: 10px;
     background-color: #4a3f39;
-    color: rgb(220, 216, 208);
     border-bottom: 2px solid rgba(55, 37, 10, 0.2);
     border-top: 2px solid rgba(55, 37, 10, 0.2);
     display: flex;
@@ -71,6 +70,19 @@ summary::-webkit-details-marker {
 
 .topbar > * {
     cursor: pointer;
+    text-decoration: none;
+    color: rgb(220, 216, 208);
+}
+
+#back
+{
+    color:beige;
+    text-align: center;
+    display:block;
+    font-size: 3rem;
+    margin-bottom: 8vh;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .sidebar {
@@ -113,6 +125,7 @@ summary::-webkit-details-marker {
     padding-left: 70px;
     word-wrap: break-word;
     line-height: 1.4;
+    text-decoration: none;
 }
 
 .container {
@@ -144,6 +157,11 @@ summary::-webkit-details-marker {
     flex-grow: 1;
     padding: 7px;
     padding-left: 200px;
+}
+
+#contact
+{
+    color: #c4bcffdc;
 }
 
 .inside-page {
@@ -293,12 +311,12 @@ summary::-webkit-details-marker {
 
 .bottom-content {
     display: flex;
-    min-height: 2vh;
+    min-height: 5vh;
     padding: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: rgb(95, 87, 71);
     background-color: #191513;
 }
