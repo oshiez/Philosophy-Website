@@ -34,6 +34,7 @@ summary::-webkit-details-marker {
 
 .main-content
 {
+    
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -43,6 +44,7 @@ summary::-webkit-details-marker {
 {
     display: flex;
     flex-direction: row;
+    
 }
 
 .page
@@ -155,7 +157,6 @@ summary::-webkit-details-marker {
 }
 .inside-content
 {
-    
     background-color: #18120E;
     color: #F4ECD8 ;
     margin-top: 2vh;
@@ -165,6 +166,7 @@ summary::-webkit-details-marker {
     border-radius: 30px;
     flex-grow: 1;
     padding: 7px;
+    padding-left: 200px;
 }
 
 .inside-page
@@ -256,14 +258,14 @@ summary::-webkit-details-marker {
 .inside-page > h1
 {
     color: #f4e6c4;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 30px;
     font-size: 4.5rem;
     font-weight: 600;
     text-align: center;
 }
 
-.inside-page > h2
+.inside-container > h2
 {
     color: #e5d7b7;
     font-size: 2.5rem;
@@ -271,7 +273,7 @@ summary::-webkit-details-marker {
     margin-bottom: 10px;
 }
 
-.inside-page > h3
+.inside-container > h3
 {
     font-size: 1.7rem;
     font-weight: 400;
@@ -410,7 +412,7 @@ summary::-webkit-details-marker {
 
   .article-button {
     width: clamp(100px, 25vw, 120px);
-    height: clamp(30px, 2vh, 400px);
+    height: clamp(30px, 2vh, 40px);
     font-size: clamp(1.2rem, 3vw, 1.4rem);
   }
 }
