@@ -156,7 +156,7 @@ summary::-webkit-details-marker {
     border-radius: 30px;
     flex-grow: 1;
     padding: 7px;
-    padding-left: 200px;
+    padding-left: 5vw;
 }
 
 #contact
@@ -321,7 +321,7 @@ summary::-webkit-details-marker {
     background-color: #191513;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1390px) {
     .sidebar-inside {
         flex-direction: column;
         width: 100%;
@@ -353,12 +353,12 @@ summary::-webkit-details-marker {
     }
 
     .title {
-        font-size: clamp(1.5rem, 6vw, 2rem);
+        font-size: clamp(1.5rem, 6vw, 3rem);
     }
 
     .topbar {
         font-size: 1rem;
-        gap: clamp(10px, 4vw, 20px);
+        gap: clamp(10px, 4vw, 500px);
     }
 
     .sub-topic {
@@ -366,16 +366,16 @@ summary::-webkit-details-marker {
     }
 
     .inside-content > h1 {
-        font-size: clamp(1.4rem, 7vw, 2.2rem);
+        font-size: clamp(1.4rem, 10vw, 4rem);
         padding-top: 20px;
     }
 
     .inside-content > h2 {
-        font-size: clamp(1.2rem, 5vw, 1.6rem);
+        font-size: clamp(1.2rem, 5vw, 2.5rem);
     }
 
     .inside-content > h3 {
-        font-size: clamp(1rem, 4vw, 1.2rem);
+        font-size: clamp(1rem, 4vw, 1.7rem);
     }
 
     .inside-content > hr {
